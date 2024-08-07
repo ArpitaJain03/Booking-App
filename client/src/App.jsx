@@ -13,7 +13,7 @@ import PlacePage from './Pages/PlacePage';
 import BookingsPage from './Pages/BookingsPage';
 import BookingPage from './Pages/BookingPage';
 
-axios.defaults.baseURL = 'https://booking-app-ecru-zeta.vercel.app';
+axios.defaults.baseURL = 'https://booking-app-ecru-zeta.vercel.app/';
 axios.defaults.withCredentials=true;
 
 function App() {
