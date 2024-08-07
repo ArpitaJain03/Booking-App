@@ -16,6 +16,14 @@ const Booking=require('./models/booking.js');
 require('dotenv').config();
 const app= express();
 
+app.use(cors(
+    {
+        origin:["https://booking-app-frontend-ruddy.vercel.app"],
+        methods:["POST","GET"],
+        credentials:true
+    }
+    ));
+
 const bcryptSalt=bcrypt.genSaltSync(10);
 const jwtSecret= 'dtygyubjhuihurgrtgtrhthythrt';
 
